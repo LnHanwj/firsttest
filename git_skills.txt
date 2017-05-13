@@ -1,0 +1,22 @@
+前：
+1.安装 git
+	url：https://git-for-windows.github.io/ （msysgit自2.0版本被取代）
+2.生成key并add到github账号的keys中
+	ssh-keygen -t rsa -C "3sdfsf80@xinlang.com"
+3.创建身份表示
+	git config --global user.name  'aa.Tessst'
+	git config --global user.email  fsc@sina.com
+4.测试联通
+	ssh -T git@github.com
+	
+备注：
+	1.两个项目关联时，合并时提示错误需要如下命令：
+		git pull origin master ----allow-unrelated-histories
+	2.别名配置
+		br = branch
+		st = status
+		co = checkout
+		ci = commit
+		unstage = reset HEAD
+		lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+		
